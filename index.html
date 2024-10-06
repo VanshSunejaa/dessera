@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Transparent Navigation Bar -->
+    <nav class="transparent-nav">
+        <div class="main">
+            <div class="centered-name"><h3>Dessera</h3></div>
+        </div>
+    </nav>
+
+    <!-- Single Page Content Section -->
+    <div class="container">
+        <!-- Recipe Input and API Fetch Section -->
+        <div class="content-section">
+            <h2>Looking for specific dishes?</h2>
+            <p>Type the name of your favorite dish and we'll fetch the recipe for you!</p>
+            <form id="mealdbForm">
+                <input type="text" id="userinput" placeholder="Enter dish name" required>
+                <button type="submit">Get Recipe</button>
+            </form>
+
+            <!-- Display fetched recipe result here -->
+            <div id="mealdb-result" class="recipe-display"></div>
+        </div>
+
+        <!-- 3D Viewer Section -->
+        <div class="viewer-section">
+            <script class="background" type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/iZTgWdqzd5yIYt53/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
